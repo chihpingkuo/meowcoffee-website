@@ -10,16 +10,7 @@ type FeatureItem = {
 };
 
 const FeatureList: FeatureItem[] = [
-  {
-    title: '綠翡翠',
-    filename: '/img/emerald.png',
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
-  },
+
   {
     title: '莉可',
     filename: '/img/reko.png',
@@ -62,7 +53,7 @@ const FeatureList: FeatureItem[] = [
   },
 ];
 
-function Feature({title, description, filename}: FeatureItem) {
+function Feature({ title, description, filename }: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
